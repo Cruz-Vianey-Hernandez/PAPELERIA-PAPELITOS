@@ -1,0 +1,803 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Russo+One&family=Titan+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Langosta', sans-serif;
+}
+
+body{
+    min-height: 1000px;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+    transition: 0.6s;
+    background-color: lavender;
+}
+
+header .logo{
+   font-weight: 700; 
+   color: black;
+   text-decoration: none;
+   font-size: 2em;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   transition: 0.6s;  
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+header.sticky{
+  padding: 5px 100px;
+  background: #b78bff;
+  border-bottom: 1px solid rgb(255, 0, 255);
+}
+
+header.sticky .logo, 
+header.sticky ul li a
+{
+  color: hsl(0, 0%, 1%);
+}
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/descarga.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.banner h2{
+    color:rgb(255, 2, 200);
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+    font-family: 'Russo One', sans-serif;
+}
+.banner h2 span{
+    color:deepskyblue;
+    font-family: 'Russo One', sans-serif;
+}
+.sec{
+    background: #ffdcf0;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+sec2 {
+    padding: 90px 50px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width: 100%;
+}
+
+.sec .content{
+    position: relative;
+    text-align:center;
+    width: 100%;
+}
+
+.mxw800p{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-left:  150px;
+    background: #d16dff;
+    color: #ffffff;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: 'Russo One', serif;
+}
+
+h3{
+    font-size: 65px;
+    font-weight: 200;
+    margin-left: 150px;
+    margin-bottom: 10px;
+    font-family: 'Titan One', sans-serif;
+ }
+ 
+ p{
+     font-size: 30px;
+     font-weight: 300;
+     margin-bottom: 50px;
+     letter-spacing: 1px; 
+     font-family: 'Langosta', sans-serif;
+ }
+ 
+ .Services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.btn1{
+    display:inline-blocks;
+    margin-left: 150px;
+    background: #d16dff;
+    color: #ffffff;
+    padding: 10px 30px;
+    text-decoration:none;
+    font-family: 'Russo One', serif;
+}
+
+.Services .box{
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 20px 25px rgb(255, 10, 214);
+}
+.Services .box .iconBx{
+    margin-top: 5px;
+}
+
+.Services .box .iconBx img{
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.Services .box h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-transform: uppease;
+    font-weight: 700;
+}
+
+.stats{
+    background: #ff7bd3;
+    padding-top: 250px;
+    margin-top: -250px;
+}
+
+.stats h3,
+.stats p
+{
+    color:#ffffff;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 150px;
+    font-family: 'Langosta',sans-serif;
+}
+
+.statsBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 200px;
+    max-width: 100%;
+}
+
+.statsBox h2{
+    color: #ffffff;
+    font-size: 80px;
+    font-family: 'Titan One', sans-serif;
+}
+
+.stats h4{
+    color:#070707;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.stats .box .iconBx2{
+    margin-top: 5px;
+}
+
+.stats .box .iconBx2 img{
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.workBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.workBx .brand{
+    position: relative;
+    font-size: 20px;
+    background: #fface6;
+    height: 330px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Titan One';
+}
+
+.workBx .brand:hover{
+    background: url(../images/fondo2.jpeg);
+}
+
+.workBx .brand a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform:unset;
+    font-family:lowercase;
+}
+
+.teamBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    max-width: 100%;
+    margin-top: 80px; 
+}
+.teamBx .member{
+    position:relative;
+    background: #000;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.teamBx .member .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.teamBx .member .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teamBx .member .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #be6ba3;
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.teamBx .member .details:hover{
+    opacity: 1;
+}
+.teamBx .member .details h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: 'Russo One', serif;  
+}
+.teamBx .member .details h2 span{
+    display: block;
+    font-size: 12px;
+    font-family: 'Russo One', serif;
+}
+
+/*Slider*/
+.content h3, .content p{
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    font-family: 'Titan One';
+}
+.slider{
+    position: relative;
+}
+
+.slider-items{
+    overflow: hidden;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: rotate(0);
+		transform-origin: top;
+	}
+
+	100% {
+		transform: rotate(360deg);
+		transform-origin: top;
+	}
+}
+
+.slider-items .item{
+    display: none;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.slider-items .item img{
+    max-width: 100%;
+    display: block;
+    align-content: center;
+}
+
+.slider-items .item.active{
+    display: block;
+}
+
+.slider-items .item .caption{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 88%;
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    color: #575356;
+    background: rgba(238, 201, 243, 0.507);
+    font-size: 40px;
+    font-family: 'Russo One', serif;
+}
+
+.slider .left-slide,  .slider .right-slide{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #d66eff;
+    color: #6bfcfcc7;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider .left-slide{
+    left: 10px;
+}
+
+.slider .right-slide{
+    right: 10px;
+}
+
+.slider .left-slide:hover,
+.slider .right-slide:hover{
+    background: #fc6dfc;
+}
+
+    
+.contact{
+    background: #e0cdff;
+    margin-top:40px
+}
+.contact h3, .contact p{
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.contactForm{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+.contactForm form{
+    width: 100%;
+}
+.contactForm .row100{
+    display: flex;
+    width: 100%;
+}
+.contactForm .row100 .inputBx50{
+    width: 50%;
+    margin: 0 20px;
+}
+.contactForm .row100 .inputBx100{
+    width: 100%;
+    margin: 0 20px;
+}
+.contactForm .row100 input,
+.contactForm .row100 textarea{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #ff00f2;
+    color: #fffcfc;
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    font-size: 20px;
+    margin: 30px 0;
+    resize: none;
+}
+.contactForm .row100 select{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    height: calc(2.25rem + 2px);
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px;
+    color:rgba(255, 255, 255, 0.5); 
+ }
+.contactForm .row100 textarea{
+    height: 200px;
+}
+.contactForm .row100 input::placeholder,
+.contactForm.row100 textarea::placeholder{
+    color: #797171;
+}
+.contactForm .row100 input[type="submit"]{
+    background: #ec87fa;
+    max-width: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left:  350px;
+}
+
+#text{
+    display:block;
+    color: #ff0000;
+    font-weight: 500;
+    padding: 1px;
+    text-align: left;
+    margin-top: -10px;  
+}
+
+#text2{
+    display:block;
+    color: #ff0000;
+    font-weight: 500;
+    padding: 1px;
+    text-align: left;
+    margin-top: -10px;  
+}
+
+#text3{
+    display:block;
+    color: #ff0000;
+    font-weight: 500;
+    padding: 1px;
+    text-align: left;
+    margin-top: -10px;  
+}
+
+  .sci{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.sci ul{
+    display: flex;
+}
+.sci ul li{
+    list-style: none;
+}
+.sci ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+.sci ul li a img{
+    filter: invert(1);
+    max-width: 40px;
+}
+.sci ul li a:hover img{
+    opacity: 0.5 ;
+}
+
+.tabla{
+    width: 100%;
+}
+
+.tabla thead{
+    background:#691865;
+    color:#fcfcfc;
+    font-family: 'Titan One', serif;
+}
+
+.tabla th, .tabla td{
+    padding: 20px;
+}
+
+.tabla tr:nth-child(even){
+    background:#e0cdff;
+}
+
+.tabla tbody tr:hover td{
+    background: #ff81c8;
+}
+
+.tabla tfoot td{
+    text-align: left;
+}
+
+.tabla tfoot .btn{
+    background: #feffff;
+}
+
+
+
+#button-up{
+    width: 60px;
+    height: 60px;
+    background: #feffff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid transparent;
+
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+
+    transition: all 300ms ease;
+    transform: scale(1);
+    box-shadow: 0px 20px 25px rgb(0, 0, 0,0.5);
+}
+
+#button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.loginBox{
+    position: fixed;
+    top: 70%;
+    left: 50%;
+
+    width: 350px;
+    height: 450px;
+
+    background:rgb(0, 0, 0);
+    padding: 80px 40px;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity:0;
+
+    transform: translate(-50%, -70%);
+}
+
+.loginBox.active{
+    top: 75%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.loginBox .user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -50px;
+    left: 125px;
+
+    background: #fff;
+    padding: 5px;
+
+    border: 4px solid #000000;
+}
+
+.loginBox .btnClose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 30px;
+    height: 30px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.loginBox h2{
+    color: #efff10;
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+.loginBox p{
+    color: rgb(252, 252, 252);
+    font-weight: 500;
+}
+
+.loginBox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #fff;
+    height: 40px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+.loginBox input[type="submit"]{
+    background: #ff267c;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.loginBox input[type="submit"]:hover{
+    background: #d549ff;
+    color: #ffffff;
+}
+
+.loginBox a{
+    color: #ff0a0a;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+}
+
+.loginBox a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .toggle {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+    .toggle:before{
+      content: '';
+      position: absolute;
+      top: 4px;
+      width: 100%;
+      height: 2px;
+      background: #000;
+      z-index: 1;
+      box-shadow: 0 10px 0 #000;
+      transition: 0.5s;
+    }
+    .toggle:after{
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      width: 100%;
+      height: 2px;
+      background: #000;
+      z-index: 1;
+      transition: 0.5s;
+    }
+    header,
+    header.sticky {
+      padding: 5px 50px;
+      background: #fff;
+    }
+    header .logo,
+    header ul li a {
+      color: #000;
+    }
+    
+    header ul {
+      position: absolute;
+      top: 59px;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      overflow: auto;
+      visibility: hidden;
+      background: #fff;
+      opacity: 0;
+    }
+    header.active ul{
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      padding-top: 20px;
+    }
+    header.active ul li a{
+      display: inline-block;
+      margin: 10px 0;
+      font-size: 20px;
+    }
+    .banner{
+      background-position: center;
+    }
+    .banner h2{
+      font-size: 60px;
+      padding: 0 50px;
+    }
+    .sec{
+      padding:  100px 50px 50px 50px;
+    }
+    .services .box{
+      width: 100%;
+    }
+    .stats{
+      padding-top: 250px;
+    }
+    .row100{
+      flex-direction: column;
+    }
+    .contactForm .row100 .inputBx50
+    .contactForm .row100 .inputBx100{
+      width: 100%;
+      margin: 0;
+    }
+    .sci{
+      margin: 20px;
+    }
+    .sci ul li a img{
+      font-size: 24px;
+    }
+    
+}
